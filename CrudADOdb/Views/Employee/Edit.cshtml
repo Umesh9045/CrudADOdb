@@ -1,0 +1,35 @@
+﻿<h1> Edit employee</h1>
+@model Employees;
+
+<form method="post">
+    <div>
+        <label asp-for="Id"></label>
+        <input type="number" asp-for="Id" />
+    </div>
+
+    <div>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" />                                
+    </div>
+
+    <div>
+        <label asp-for="Gender"></label>
+        <input type="text" asp-for="Gender" />
+    </div>
+    <div>
+        <label asp-for="Age"></label>
+        <input type="number" asp-for="Age" />
+    </div>
+
+    <div>
+        <label asp-for="Designation"></label>
+        <input type="text" asp-for="Designation" />
+    </div>
+
+    <div>
+        <label asp-for="City"></label>
+        <input type="text" asp-for="City" />
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
